@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0"/>
+    <style>
+     * {
+         padding:0;
+         margin:0;
+         font-family: Arial;
+     }
+     ul{
+         list-style: none;
+     }
+     @media screen and (max-width: 800px) {
+	    .login-in-container{
+	        width: 100vw;
+	        height: 100vh;
+	        background-image: url("image/login.png");
+	        background-repeat: no-repeat;
+	        background-size: cover;
+	        display: flex;
+	        justify-content: center;
+	        align-content: center;
+            overflow: hidden;
+   		}
+         .login-in-bottom{
+             position: fixed;
+             bottom: 15px;
+             color: #fff;
+             left:calc(50vw - 170px);
+             transform: scale(0.8);
+         }
+         .login-in-content ul li{
+             margin-bottom: 15px;
+         }
+         .content{
+             font-size: 11px;
+         }
+         .login-in-content{
+             padding-top: 45px;
+         }
+	}
+	@media screen and (min-width: 800px) {
+	   .login-in-container{
+	        width: 100vw;
+	        height: 100vh;
+	        background-image: url("image/pc_login.png");
+	        background-repeat: no-repeat;
+	        background-size: 102%;
+            background-position-x: -6px;
+	        display: flex;
+	        justify-content: center;
+	        align-content: center;
+           overflow: hidden;
+   		}
+        .login-in-bottom{
+            position: fixed;
+            bottom: 30px;
+            color: #fff;
+            left:calc(50vw - 255px);
+            width: 510px;
+        }
+        .login-in-content ul li{
+            margin-bottom: 5px;
+        }
+        .content{
+            font-size: 11px;
+        }
+        .login-in-content{
+            padding-top: 40px;
+        }
+	}
+   
+    .login-in-icon{
+        display:block;
+        width: 27px;
+        height: 27px;
+        border: solid 2px #fff;
+        border-radius: 50%;
+        position: fixed;
+        bottom: 79px;
+    }
+    .login-in-content{
+    	width: 100%;
+	    height: 100%;
+	    display: flex;
+	    align-items: center;
+	    justify-content: center;
+	    flex-direction: column;
+    }
+     .login-in-content ul{
+         width: 340px;
+     }
+    .login-in-content ul li{
+        display: block;
+        text-align: left;
+    }
+     .login-in-content a{
+         text-decoration: none;
+         color: #fff;
+         display: block;
+     }
+     .title{
+        font-size: 14px;
+        text-decoration: underline;
+    }
+        .gray{
+            color: #999!important;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-in-container">
+       <!--  <a class="login-in-icon" href="index.html"></a> -->
+       <div class="login-in-content">
+           <ul>
+              <li><a href="http://community.oneaden.cn">Community App Demo (view on mobile screen)  </a></li>
+              <li><a href="http://foodservice.oneaden.cn">Oxygen Cafe Demo (view on PC screen)</a></li>
+               <li><a href="http://retail.oneaden.cn">Retail Demo (view on mobile screen)  </a></li>
+              <li><a href="https://app.klipfolio.com/login">Customer Portal Demo</a><a href="https://app.klipfolio.com/login" class="gray">(Email: oneadendemo@hotmail.com, Password: demo)</a></li>
+           </ul>
+       </div>
+       <div class="login-in-bottom">
+           <div class="title">COPYRIGHT NOTICE</div>
+           <div class="content">All services, materials and information contained in this website are the property of ADEN SERVICES and are protected by copyright, trademark and other intellectual property laws.  No material from this web site may be copied, reproduced, modified, republished, uploaded, posted, transmitted, or distributed in any way without prior written permission from ADEN SERVICES.</div>
+       </div>
+    </div>
+</body>
+
+</html>
